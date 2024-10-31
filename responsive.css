@@ -1,0 +1,135 @@
+/*Mobile and tablet*/
+@media(max-width: 1023px){
+.hide-on-mobile-tablet{
+    display: none;
+}
+:root{
+    --header_height: 68px;
+    --header_nav_height: 0px;
+} 
+.header_filler{
+    background-color: var(--white-color);
+    font-size: 1.8rem;
+    color: var(--text-color);
+    display: block;
+    height: 36px;
+}
+.header_filler__list{
+    height: 100%;
+    display: flex;
+    list-style: none; 
+}
+.header_filler__item{
+    position: relative;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 25%;
+}
+.header_filler__item:hover{
+    transform: translateY(-1px);
+}
+.header_filler__item:not(:first-child)::before {
+ position: absolute;
+ content: "";
+ border: 1px solid #ebebeb;
+ left: 0;
+ top: 6px;
+ bottom: 6px;
+}
+.header_filler_sort-price{
+    padding: 8px 6px;
+    position: absolute;
+    top: 100%;
+    left: 0 ;
+    right: 0;
+    display: none;
+    background-color: var(--white-color);
+}
+.header_filler_sort-price_list{
+    list-style: none;  
+}
+.header_filler_sort-price_item{
+    line-height: 20px;
+}
+.header_filler__item-price:hover .header_filler_sort-price{
+    display: block;
+}
+.header_filler__item--active,
+.header_filler_sort-price_item--active{
+    color: var(--primary-color);
+}
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.container{
+    margin-top: 104px;
+}
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .column__m-4{
+        width: 33.3333%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .hide-on-tablet{
+        display: none;
+    }
+    .column__m-fullwidth{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    .column__m-3{
+        width: 25%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/*Mobile*/
+@media(max-width:740px){
+
+    .hide-on-mobile{
+        display: none;
+    }
+    .column__s-6{
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+    .column__s-fullwidth{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .header_logo_wrap{
+        flex: 1;
+      }
+      .header-search-mobile{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 148px;
+      }
+      .header-search-mobile-icon{
+        font-size: 25px;
+        color: var(--white-color);
+        padding: 22px;
+        
+      }
+
+      .header_logo_wrap a {
+        margin: 0;
+        padding-top: 8px;
+      }
+      
+
+}
